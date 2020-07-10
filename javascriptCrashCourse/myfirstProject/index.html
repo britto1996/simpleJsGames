@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <div class="container-1">
+    <h1>challenge1: My Age In Days</h1>
+    <div class="flex-container-1">
+    <div>
+    <button class="btn btn-primary" type="submit" onclick="addBirthdays()">click</button>
+    </div>
+    <div>
+    <button class="btn btn-danger" type="submit" onclick="resetBirthdays()">reset</button>
+    </div>
+    <div class="flex-container-1" id='finalResult'></div>
+    </div>
+    </div>
+    <div class="container-2">
+    <h1>challenge2: photo generator</h1>
+    <div class="flex-container-2">
+    <button class="btn btn-success" type="submit" id="cat-generate" onclick="photoGenerate()">generate</button>
+    <div class="flex-container-2" id='generatePhoto'></div>
+    </div>
+    </div>
+    <div class="container-3">
+    <h1>challenge3: Rock , Paper , Scissors</h1>
+    <div class="flex-container-3" id="flexbox-rps-div">
+    <img src="../images/rock.jpg" id="rock" onclick="rpsGame(this)">
+    <img src="../images/paper.jpg" id="paper" onclick="rpsGame(this)">
+    <img src="../images/scissor.png" id="scissor" onclick="rpsGame(this)">
+    </div>
+    </div>
+    <div class="container-4">
+    <h1 id="change-my-color">challenge4: change button colors</h1>
+    <div class="flex-container-4">
+    <form action="">
+    <select name="backdrop" onchange="buttonChange(this)">
+       <option value="random">random</option>
+       <option value="red">red</option>
+       <option value="green">green</option>
+       <option value="reset">reset</option>
+    </select>
+    </form>
+    <button class="btn btn-primary" value="blue">Facebook</button>
+    <button class="btn btn-danger" value="red">CIA</button>
+    <button class="btn btn-success" value="green">Go On</button>
+    <button class="btn btn-warning" value="yellow">Fuck Off</button>
+    </div>
+    </div>
+</body>
+</html>
